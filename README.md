@@ -1,6 +1,6 @@
 # Christopher Bradford – Detection Engineering Portfolio
 
-![Detection Engineering Banner](https://via.placeholder.com/1600x400/0d1117/00ff88?text=Detection+Engineering+Portfolio+%E2%80%93+Christopher+Bradford+%7C+USAF+Veteran)  
+![Detection Engineering Banner](https://media.licdn.com/dms/image/v2/D4E16AQEwvcSys-1BHw/profile-displaybackgroundimage-shrink_350_1400/B4EZf8ubK1HwAY-/0/1752291718131?e=1765411200&v=beta&t=kMZQivAtkJkCOxwi380tsy5PHjSM04YKKvJQoLMb5Ic)  
 *(replace the link above with your Canva banner when ready)*
 
 **USAF Veteran** • **Active Clearance-Eligible** • **SC-200 + CJDE Dec 2025**  
