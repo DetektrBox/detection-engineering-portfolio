@@ -18,6 +18,8 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 | **Threat Campaign Write-up**   | 1     | Full 2025 campaign deep-dive with timeline, TTPs, custom rules, and hunting queries       | [`/threat-campaigns`](threat-campaigns)     |
 | **Detection-as-Code Pipeline** | 3     | GitHub Actions: Sigma lint • YARA compile • rule validation on every push                 | [`.github/workflows`](.github/workflows)    |
 | **Automation Scripts**         | 3+    | Sigma → Splunk/Elastic converters • bulk YARA tester • MITRE enrichment script            | [`/automation`](automation)                 |
+| **Assets**                     | –     | Screenshots of alerts firing in my lab • banners • rule validation evidence • Atomic Red Team results | [`/assets`](assets)             |
+
 
 ## Why Hire Me as Your Next Detection Engineer?
 
