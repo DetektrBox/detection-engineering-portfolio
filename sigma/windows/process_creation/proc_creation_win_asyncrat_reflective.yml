@@ -1,0 +1,25 @@
+title: AsyncRAT Reflective DLL Loading via Regsvr32/Rundll32
+id: b2f4e8d1-3c9a-4f2b-b1e5-9d8e7f6c3a10
+status: stable
+description: Detects AsyncRAT 2024-2025 reflective loading patterns
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.defense-evasion
+  - attack.t1218.011
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith:
+      - '\regsvr32.exe'
+      - '\rundll32.exe'
+    CommandLine|contains:
+      - '/s'
+      - 'scrobj.dll'
+      - 'urlmon.dll'
+  condition: selection
+falsepositives:
+  - Legitimate software installation
+level: medium

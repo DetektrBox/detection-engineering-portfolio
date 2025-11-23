@@ -1,0 +1,20 @@
+title: Azure AD Impossible Travel
+id: 33333333-4444-5555-6666-777777777777
+status: stable
+description: Successful login from two locations >2000km apart in <1h
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.initial-access
+  - attack.t1078.004
+logsource:
+  product: azure
+  service: signinlogs
+detection:
+  selection:
+    ResultType: '0'
+    Location: '*'
+  condition: selection
+falsepositives:
+  - VPN, travel, proxy
+level: high

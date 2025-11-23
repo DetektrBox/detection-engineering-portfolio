@@ -1,0 +1,19 @@
+title: AWS Suspicious New IAM User Creation
+id: 66666666-7777-8888-9999-aaaaaaaaaaaa
+status: experimental
+description: New IAM user created from unusual IP/location
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.persistence
+  - attack.t1136
+logsource:
+  product: aws
+  service: cloudtrail
+detection:
+  selection:
+    eventName: CreateUser
+  condition: selection
+falsepositives:
+  - DevOps automation
+level: medium

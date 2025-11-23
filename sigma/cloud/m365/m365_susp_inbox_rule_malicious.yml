@@ -1,0 +1,20 @@
+title: Suspicious Inbox Rule Creation (Forward/Delete)
+id: 55555555-6666-7777-8888-999999999999
+status: stable
+description: Inbox rule that forwards or deletes mail
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.collection
+  - attack.t1114.003
+logsource:
+  product: azure
+  service: auditlogs
+detection:
+  selection:
+    OperationName: 'New-InboxRule'
+    Properties|contains: 'ForwardTo'
+  condition: selection
+falsepositives:
+  - User-created forwarding
+level: high

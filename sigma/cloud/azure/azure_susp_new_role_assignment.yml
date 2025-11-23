@@ -1,0 +1,21 @@
+title: Azure Suspicious High-Privilege Role Assignment
+id: 44444444-5555-6666-7777-888888888888
+status: stable
+description: New Global Administrator or Privileged Role Admin assignment
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.persistence
+  - attack.t1098
+logsource:
+  product: azure
+  service: auditlogs
+detection:
+  selection:
+    OperationName: 'Add member to role'
+    InitiatedBy: '*'
+    TargetResources|contains: 'Global Administrator'
+  condition: selection
+falsepositives:
+  - Legitimate admin onboarding
+level: high

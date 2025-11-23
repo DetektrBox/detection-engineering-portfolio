@@ -1,0 +1,29 @@
+# 1 – LummaC2 Stealer
+title: LummaC2 Stealer Process Creation Patterns
+id: 8f5d3c1a-9b2f-4e5d-8a1c-3d7e9f2b6a4e
+status: stable
+description: Detects process patterns observed in 2024-2025 LummaC2 campaigns
+author: Christopher Bradford
+date: 2025-11-23
+references:
+  - https://www.crowdstrike.com/blog/lumma-stealer-resurgence-2025/
+tags:
+  - attack.credential-access
+  - attack.t1555.003
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith:
+      - '\rundll32.exe'
+      - '\regsvr32.exe'
+      - '\mshta.exe'
+    CommandLine|contains:
+      - 'AppData'
+      - '.dat'
+      - 'http'
+  condition: selection
+falsepositives:
+  - Rare legitimate script usage
+level: high

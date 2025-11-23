@@ -1,0 +1,20 @@
+title: Okta Brute Force or Credential Stuffing Attempt
+id: 77777777-8888-9999-aaaa-bbbbbbbbbbbb
+status: stable
+description: >10 failed logins followed by success from same IP
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.credential-access
+  - attack.t1110
+logsource:
+  product: okta
+  service: system
+detection:
+  selection:
+    outcome.result: 'FAILURE'
+    eventType: 'user.session.start'
+  condition: selection
+falsepositives:
+  - User forgot password
+level: medium

@@ -1,0 +1,24 @@
+title: Linux Suspicious Download to /tmp or /dev/shm
+id: 88888888-9999-aaaa-bbbb-cccccccccccc
+status: stable
+description: curl/wget writing directly to temporary locations
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.execution
+  - attack.t1059.004
+logsource:
+  category: process_creation
+  product: linux
+detection:
+  selection:
+    Image|endswith:
+      - '/curl'
+      - '/wget'
+    CommandLine|contains:
+      - '/tmp/'
+      - '/dev/shm/'
+  condition: selection
+falsepositives:
+  - Legitimate scripts
+level: medium

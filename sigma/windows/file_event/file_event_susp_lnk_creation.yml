@@ -1,0 +1,22 @@
+title: Suspicious LNK File Creation in Startup/AppData
+id: 22222222-3333-4444-5555-666666666666
+status: stable
+description: LNK files created in startup folders or AppData
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.persistence
+  - attack.t1547.001
+logsource:
+  category: file_event
+  product: windows
+detection:
+  selection:
+    TargetFilename|endswith: '.lnk'
+    TargetFilename|contains:
+      - '\Startup\'
+      - '\AppData\Roaming\'
+  condition: selection
+falsepositives:
+  - User-created shortcuts
+level: medium

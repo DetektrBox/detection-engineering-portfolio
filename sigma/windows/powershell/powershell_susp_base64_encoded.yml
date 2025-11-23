@@ -1,0 +1,19 @@
+title: Suspicious Base64 Encoded PowerShell
+id: e5f6a7b8-c9d0-e1f2-3456-7890abcdef12
+status: stable
+description: PowerShell executing base64 encoded commands
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.execution
+  - attack.t1059.001
+logsource:
+  category: powershell
+  product: windows
+detection:
+  selection:
+    ScriptBlockText|contains: '-enc '
+  condition: selection
+falsepositives:
+  - Legitimate admin scripts
+level: medium

@@ -1,0 +1,19 @@
+title: macOS Suspicious Python Network Connection
+id: 99999999-aaaa-bbbb-cccc-dddddddddddd
+status: stable
+description: Python making direct outbound connections (common in macOS malware)
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.command-and-control
+logsource:
+  category: process_creation
+  product: macos
+detection:
+  selection:
+    Image: '/usr/bin/python*'
+    CommandLine|contains: 'http'
+  condition: selection
+falsepositives:
+  - Python scripts with requests library
+level: medium

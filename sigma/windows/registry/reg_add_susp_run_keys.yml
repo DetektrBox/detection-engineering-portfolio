@@ -1,0 +1,20 @@
+title: Suspicious Run Key Persistence
+id: f6a7b8c9-d0e1-f234-5678-90abcdef1234
+status: stable
+description: Adds executable to common Run/RunOnce registry keys
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.persistence
+  - attack.t1547.001
+logsource:
+  category: registry_event
+  product: windows
+detection:
+  selection:
+    EventType: SetValue
+    TargetObject|contains: '\SOFTWARE\Microsoft\Windows\CurrentVersion\Run'
+  condition: selection
+falsepositives:
+  - Legitimate software installers
+level: medium

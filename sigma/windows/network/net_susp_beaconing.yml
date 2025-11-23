@@ -1,0 +1,19 @@
+title: Suspicious Regular Beaconing Pattern
+id: 11111111-2222-3333-4444-555555555555
+status: experimental
+description: Detects processes making connections at regular intervals (±10%)
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.command-and-control
+  - attack.t1071
+logsource:
+  category: firewall
+  product: windows
+detection:
+  selection:
+    DestinationPort: 443
+  condition: selection
+falsepositives:
+  - Windows Update, Office 365, etc.
+level: low
