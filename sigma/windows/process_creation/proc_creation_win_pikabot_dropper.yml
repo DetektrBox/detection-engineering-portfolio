@@ -1,20 +1,26 @@
-title: Pikabot Dropper Process Creation
+title: Pikabot Dropper Execution via mshta/rundll32
 id: c3d4e5f6-7890-abcd-ef12-34567890abcd
 status: experimental
-description: Detects Pikabot 2025 dropper execution patterns
+description: Detects Pikabot 2025 dropper execution patterns (mshta + data/base64 or rundll32 + javascript)
 author: Christopher Bradford
 date: 2025-11-23
 tags:
   - attack.execution
-  - attack.t1105
+  - attack.t1218.005
+  - attack.t1218.011
 logsource:
   category: process_creation
   product: windows
 detection:
-  selection:
+  selection1:
     Image|endswith: '\mshta.exe'
-    CommandLine|contains: 'javascript:'
-  condition: selection
+    CommandLine|contains: 'data:text/html;base64,'
+  selection2:
+    Image|endswith: '\rundll32.exe'
+    CommandLine|contains:
+      - 'javascript:'
+      - 'eval('
+  condition: selection1 or selection2
 falsepositives:
-  - Rare legitimate HTA usage
+  - Rare legitimate usage of mshta with base64 payloads
 level: high
