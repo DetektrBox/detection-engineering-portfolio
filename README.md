@@ -10,14 +10,14 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 ## What’s Inside (Live & Growing)
 
-| Category                        | Count | Details                                                                                   | Folder Link                                 |
+| Category                       | Count | Details                                                                                  | Folder Link                                 |
 |--------------------------------|-------|-------------------------------------------------------------------------------------------|---------------------------------------------|
-| **Sigma Rules**                | 30+   | Windows • Linux • macOS • Cloud • Identity • Fully MITRE-mapped & tuned                 | [`/sigma`](sigma)                             |
-| **YARA Rules**                 | 12+   | 2024–2025 families (LummaC2, AsyncRAT, Pikabot, Latentit, etc.)                         | [`/yara`](yara)                               |
-| **Detection Stories**          | 10    | Red Canary/CrowdStrike-style narratives: TTP → Detection → Alert screenshots            | [`/detection-stories`](detection-stories)     |
-| **Threat Campaign Write-up**   | 1     | Full 2025 campaign deep-dive with timeline, TTPs, custom rules, and hunting queries     | [`/threat-campaigns`](threat-campaigns)       |
-| **Detection-as-Code Pipeline** | 3     | GitHub Actions: Sigma lint • YARA compile • rule validation on every push               | [`.github/workflows`](.github/workflows)      |
-| **Automation Scripts**         | 3+    | Sigma → Splunk/Elastic converters • bulk YARA tester • MITRE enrichment script          | [`/automation`](automation)                   |
+| **Sigma Rules**                | 30+   | Windows • Linux • macOS • Cloud • Identity • Fully MITRE-mapped & tuned                   | [`/sigma`](sigma)                           |
+| **YARA Rules**                 | 12+   | 2024–2025 families (LummaC2, AsyncRAT, Pikabot, Latentit, etc.)                           | [`/yara`](yara)                             |
+| **Detection Stories**          | 10    | Red Canary/CrowdStrike-style narratives: TTP → Detection → Alert screenshots              | [`/detection-stories`](detection-stories)   |
+| **Threat Campaign Write-up**   | 1     | Full 2025 campaign deep-dive with timeline, TTPs, custom rules, and hunting queries       | [`/threat-campaigns`](threat-campaigns)     |
+| **Detection-as-Code Pipeline** | 3     | GitHub Actions: Sigma lint • YARA compile • rule validation on every push                 | [`.github/workflows`](.github/workflows)    |
+| **Automation Scripts**         | 3+    | Sigma → Splunk/Elastic converters • bulk YARA tester • MITRE enrichment script            | [`/automation`](automation)                 |
 
 ## Why Hire Me as Your Next Detection Engineer?
 
