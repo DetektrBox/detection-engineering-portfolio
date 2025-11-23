@@ -1,5 +1,5 @@
 title: Cobalt Strike Beacon Process Creation
-id: aaaaaaaa-bbbb-cccc-dddd-111111111111
+id: 06fc414e-0d0c-4671-a5e4-8afba54d8a17
 status: stable
 description: Detects typical Cobalt Strike named-pipe and process patterns
 author: Christopher Bradford

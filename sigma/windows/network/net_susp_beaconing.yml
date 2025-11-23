@@ -1,5 +1,5 @@
 title: Suspicious Regular Beaconing Pattern
-id: 11111111-2222-3333-4444-555555555555
+id: 685790ea-b6c4-4795-9546-3ed9855e5a14
 status: experimental
 description: Detects processes making connections at regular intervals (±10%)
 author: Christopher Bradford

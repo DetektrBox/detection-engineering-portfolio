@@ -1,5 +1,5 @@
 title: macOS Suspicious Python Network Connection
-id: 99999999-aaaa-bbbb-cccc-dddddddddddd
+id: 53dbc5c5-abd7-4298-89ec-0799e2f2fd50
 status: stable
 description: Python making direct outbound connections (common in macOS malware)
 author: Christopher Bradford
