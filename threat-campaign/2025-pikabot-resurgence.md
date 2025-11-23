@@ -12,9 +12,10 @@
 | Obfuscated Files              | T1027        | file_event_susp_lnk_creation.yml |
 | Process Injection             | T1055        | (in progress) |
 
-## Custom Detections Shipped
-- Sigma: [Pikabot Dropper via mshta](sigma/windows/process_creation/proc_creation_win_pikabot_dropper.yml)
-- YARA: [Pikabot 2025 strings](yara/pikabot_2025.yar)
+### Custom Detections Shipped
+
+- Sigma: [Pikabot Dropper via mshta](/sigma/windows/process_creation/proc_creation_win_pikabot_dropper.yml)
+- YARA: [Pikabot 2025 strings](/yara/pikabot_2025.yar)
 - KQL Hunting Query (Sentinel):
 ```kql
 SigninLogs
