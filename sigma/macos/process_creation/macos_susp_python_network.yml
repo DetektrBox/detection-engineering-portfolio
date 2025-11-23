@@ -12,7 +12,9 @@ logsource:
 detection:
   selection:
     Image: '/usr/bin/python*'
-    CommandLine|contains: 'http'
+    CommandLine|contains:
+      - 'http://'
+      - 'https://'
   condition: selection
 falsepositives:
   - Python scripts with requests library

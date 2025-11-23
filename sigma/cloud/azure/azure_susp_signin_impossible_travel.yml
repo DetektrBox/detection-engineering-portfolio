@@ -12,7 +12,7 @@ logsource:
   service: signinlogs
 detection:
   selection:
-    ResultType: '0'
+    ResultType: 0
     Location: '*'
   condition: selection
 falsepositives:
