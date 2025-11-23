@@ -10,7 +10,7 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 ## What’s Inside (Live & Growing)
 
-| Category                       | Count | Details                                                                                  | Folder Link                                 |
+| Category                       | Count | Details                                                                                   | Folder Link                                 |
 |--------------------------------|-------|-------------------------------------------------------------------------------------------|---------------------------------------------|
 | **Sigma Rules**                | 30+   | Windows • Linux • macOS • Cloud • Identity • Fully MITRE-mapped & tuned                   | [`/sigma`](sigma)                           |
 | **YARA Rules**                 | 12+   | 2024–2025 families (LummaC2, AsyncRAT, Pikabot, Latentit, etc.)                           | [`/yara`](yara)                             |
