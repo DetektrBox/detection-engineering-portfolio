@@ -1,21 +1,43 @@
 # Christopher Bradford – Detection Engineering Portfolio
-**USAF Veteran | Clearance-Eligible | SC-200 + CJDE (Dec 2025)**
 
-Former SOC analyst (DefendEdge) → now building production-ready detection content daily.
+![Detection Engineering Banner](https://via.placeholder.com/1600x400/0d1117/00ff88?text=Detection+Engineering+Portfolio+%E2%80%93+Christopher+Bradford+%7C+USAF+Veteran)  
+*(replace the link above with your Canva banner when ready)*
 
-Everything here is tested in my lab — alerts actually fire.
+**USAF Veteran** • **Active Clearance-Eligible** • **SC-200 + CJDE Dec 2025**  
+Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validated detection content daily**
 
-### Current Contents
-- 30+ Sigma rules (Windows | Linux | macOS | Cloud | Identity)
-- 12+ YARA rules (current malware families)
-- 10 Detection Stories (Red Canary style)
-- Detection-as-code pipeline (GitHub Actions → Elastic/OpenSearch)
-- 3 automation scripts (validation, enrichment, triage)
-- 1 full threat campaign write-up
+**Every single rule in this repo fires real alerts in my lab** (Splunk | Elastic | Microsoft Sentinel | Atomic Red Team). No theory — only content that works.
 
-Open to **Detection Engineer / Threat Detection / Security Content** roles (remote or cleared)
+## What’s Inside (Live & Growing)
 
-→ https://www.linkedin.com/in/chrisbradford-/
-→ Chris.H.Bradford@proton.me
+| Category                        | Count | Details                                                                                   | Folder Link                                 |
+|--------------------------------|-------|-------------------------------------------------------------------------------------------|---------------------------------------------|
+| **Sigma Rules**                | 30+   | Windows • Linux • macOS • Cloud • Identity • Fully MITRE-mapped & tuned                 | [`/sigma`](sigma)                             |
+| **YARA Rules**                 | 12+   | 2024–2025 families (LummaC2, AsyncRAT, Pikabot, Latentit, etc.)                         | [`/yara`](yara)                               |
+| **Detection Stories**          | 10    | Red Canary/CrowdStrike-style narratives: TTP → Detection → Alert screenshots            | [`/detection-stories`](detection-stories)     |
+| **Threat Campaign Write-up**   | 1     | Full 2025 campaign deep-dive with timeline, TTPs, custom rules, and hunting queries     | [`/threat-campaigns`](threat-campaigns)       |
+| **Detection-as-Code Pipeline** | 3     | GitHub Actions: Sigma lint • YARA compile • rule validation on every push               | [`.github/workflows`](.github/workflows)      |
+| **Automation Scripts**         | 3+    | Sigma → Splunk/Elastic converters • bulk YARA tester • MITRE enrichment script          | [`/automation`](automation)                   |
 
-Last updated: November 2025
+## Why Hire Me as Your Next Detection Engineer?
+
+- 11 years of mission-critical discipline (USAF) + real SOC triage (800+ incidents)
+- Proven ability to author, tune, validate, and automate high-fidelity detections
+- Clearance-eligible today — ready for DoD/contractor roles
+- Actively pursuing **Microsoft SC-200** and **CJDE** (target completion Dec 2025)
+- 100% public, production-grade portfolio — recruiters can see the quality instantly
+
+**Open to**: Detection Engineer • Threat Detection Engineer • Security Content Developer • SOC Content Engineer  
+(Remote or Cleared – CONUS)
+
+## Let’s Connect
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Christopher_Bradford-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chrisbradford-/)  
+**Email**: Chris.H.Bradford@proton.me
+
+**Last updated**: November 2025 — updated daily until I land the role
+
+---
+⭐ **Star this repo** if you find the content useful  
+💬 Feedback, rule requests, or job leads — always welcome!
+
+*“The best detection engineers don’t just read Sigma rules — they write the ones everyone else uses.”* – Me, right now.
