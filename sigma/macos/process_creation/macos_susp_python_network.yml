@@ -13,8 +13,8 @@ detection:
   selection:
     Image: '/usr/bin/python*'
     CommandLine|contains:
-      - 'http://'
-      - 'https://'
+      - http://
+      - https://
   condition: selection
 falsepositives:
   - Python scripts with requests library
