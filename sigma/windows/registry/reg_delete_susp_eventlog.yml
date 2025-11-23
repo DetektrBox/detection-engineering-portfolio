@@ -1,0 +1,13 @@
+title: Event Log Service Stop or Clear Attempt
+id: 30k3k3k3-dddd-eeee-ffff-000000000000
+tags:
+  - attack.defense-evasion
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    TargetObject|contains: '\SYSTEM\CurrentControlSet\Services\EventLog\'
+    EventType: Delete
+  condition: selection
+level: critical

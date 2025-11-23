@@ -1,0 +1,20 @@
+title: AppInit_DLLs Persistence
+id: 19f2f2f2-2222-3333-4444-555555555555
+status: stable
+description: Modification of AppInit_DLLs registry key
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.persistence
+  - attack.t1546.010
+logsource:
+  category: registry_event
+  product: windows
+detection:
+  selection:
+    TargetObject|contains: '\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\AppInit_DLLs'
+    EventType: SetValue
+  condition: selection
+falsepositives:
+  - Rare legitimate software installers
+level: high

@@ -1,0 +1,20 @@
+title: Cobalt Strike Beacon Process Creation
+id: aaaaaaaa-bbbb-cccc-dddd-111111111111
+status: stable
+description: Detects typical Cobalt Strike named-pipe and process patterns
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.execution
+  - attack.t1055
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\rundll32.exe'
+    CommandLine|contains: 'post-ex'
+  condition: selection
+falsepositives:
+  - None known
+level: high

@@ -1,0 +1,15 @@
+title: LSASS Memory Access (Mimikatz/ProcDump)
+id: 21b4b4b4-4444-5555-6666-777777777777
+status: stable
+tags:
+  - attack.credential-access
+  - attack.t1003.001
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\lsass.exe'
+    GrantedAccess: '0x1010'
+  condition: selection
+level: critical

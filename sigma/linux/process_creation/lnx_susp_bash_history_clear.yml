@@ -1,0 +1,14 @@
+title: Bash History Cleared
+id: 27h0h0h0-aaaa-bbbb-cccc-dddddddddddd
+tags:
+  - attack.defense-evasion
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    CommandLine|contains:
+      - 'history -c'
+      - 'rm ~/.bash_history'
+  condition: selection
+level: medium

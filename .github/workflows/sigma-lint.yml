@@ -1,0 +1,13 @@
+name: Sigma Lint & Validate
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Sigma CLI
+        run: pip install sigmatools
+      - name: Lint all rules
+        run: |
+          find sigma -name "*.yml" -exec sigma check {} \; && echo "All Sigma rules valid!"

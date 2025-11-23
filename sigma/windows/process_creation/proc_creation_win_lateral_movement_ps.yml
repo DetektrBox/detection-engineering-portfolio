@@ -1,0 +1,23 @@
+title: Suspicious PowerShell Remote Execution (PsExec/WMI)
+id: 18e1e1e1-1111-2222-3333-444444444444
+status: stable
+description: PowerShell used for lateral movement via Invoke-Command or WMI
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.lateral-movement
+  - attack.t1021.006
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains:
+      - 'Invoke-Command'
+      - '-ComputerName'
+      - 'wmic '
+  condition: selection
+falsepositives:
+  - Admin scripting
+level: medium

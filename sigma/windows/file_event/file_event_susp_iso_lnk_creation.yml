@@ -1,0 +1,17 @@
+title: Suspicious ISO/LNK Creation in Temp
+id: 24e7e7e7-7777-8888-9999-aaaaaaaaaaaa
+status: stable
+tags:
+  - attack.initial-access
+  - attack.t1566.001
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    TargetFilename|endswith:
+      - '.iso'
+      - '.lnk'
+    TargetFilename|contains: '\AppData\Local\Temp'
+  condition: selection
+level: high

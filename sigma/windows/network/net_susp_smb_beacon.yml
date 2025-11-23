@@ -1,0 +1,15 @@
+title: Suspicious SMB Beaconing (Lateral Movement)
+id: 26g9g9g9-9999-aaaa-bbbb-cccccccccccc
+tags:
+  - attack.lateral-movement
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    DestinationPort: 445
+    Image|endswith:
+      - '\svchost.exe'
+      - '\lsass.exe'
+  condition: selection
+level: high

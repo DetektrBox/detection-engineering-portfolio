@@ -1,0 +1,21 @@
+title: PowerShell AMSI Bypass Attempt
+id: bbbbbbbb-cccc-dddd-eeee-222222222222
+status: stable
+description: Common AMSI bypass patterns seen in 2025 loaders
+author: Christopher Bradford
+date: 2025-11-23
+tags:
+  - attack.defense-evasion
+  - attack.t1562.001
+logsource:
+  category: powershell
+  product: windows
+detection:
+  selection:
+    ScriptBlockText|contains|all:
+      - 'amsiutils'
+      - '0x3e00000000'
+  condition: selection
+falsepositives:
+  - Red team tools
+level: high

@@ -1,0 +1,12 @@
+title: Heavily Obfuscated PowerShell
+id: 28i1i1i1-bbbb-cccc-dddd-eeeeeeeeeeee
+tags:
+  - attack.execution
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    CommandLine|re: '\^[a-zA-Z0-9+/=]{100,}'
+  condition: selection
+level: high
