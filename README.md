@@ -15,7 +15,7 @@ Everything here is tested in my lab — alerts actually fire.
 
 Open to **Detection Engineer / Threat Detection / Security Content** roles (remote or cleared)
 
-→ linkedin.com/in/chrisbradford-  
+→ https://www.linkedin.com/in/chrisbradford-/
 → Chris.H.Bradford@proton.me
 
 Last updated: November 2025
