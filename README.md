@@ -1,12 +1,12 @@
-# Christopher Bradford – Detection Engineering Portfolio
+# Detection Engineering Portfolio -- Chris Bradford
 
 ![Detection Engineering Banner](https://media.licdn.com/dms/image/v2/D4E16AQEwvcSys-1BHw/profile-displaybackgroundimage-shrink_350_1400/B4EZf8ubK1HwAY-/0/1752291718131?e=1765411200&v=beta&t=kMZQivAtkJkCOxwi380tsy5PHjSM04YKKvJQoLMb5Ic)  
-*(replace the link above with your Canva banner when ready)*
+
 
 **USAF Veteran** • **Active Clearance-Eligible** • **SC-200 + CJDE Dec 2025**  
 Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validated detection content daily**
 
-**Every single rule in this repo fires real alerts in my lab** (Splunk | Elastic | Microsoft Sentinel | Atomic Red Team). No theory — only content that works.
+**Every single rule in this repo fires real alerts in my lab** (Splunk | Elastic | Microsoft Sentinel | Atomic Red Team). No theory, only content that works.
 
 ## What’s Inside (Live & Growing)
 
@@ -23,12 +23,12 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 - 11 years of mission-critical discipline (USAF) + real SOC triage (800+ incidents)
 - Proven ability to author, tune, validate, and automate high-fidelity detections
-- Clearance-eligible today — ready for DoD/contractor roles
+- Clearance-eligible today: ready for DoD/contractor roles
 - Actively pursuing **Microsoft SC-200** and **CJDE** (target completion Dec 2025)
 - 100% public, production-grade portfolio — recruiters can see the quality instantly
 
 **Open to**: Detection Engineer • Threat Detection Engineer • Security Content Developer • SOC Content Engineer  
-(Remote or Cleared – CONUS)
+(Remote or Cleared –- CONUS)
 
 ## Let’s Connect
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Christopher_Bradford-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chrisbradford-/)  
