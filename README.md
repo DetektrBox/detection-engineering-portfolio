@@ -41,22 +41,7 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 ### Live MITRE ATT&CK Coverage (T1059.001 already green)
 
-[![MITRE Coverage](https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FDetektrBox%2Fdetection-engineering-portfolio%2Fmain%2Fmitre%2F0xchrisb-detection-coverage-v18.json&tabs=false&selecting_technique_mode=technique&selecting_technique=T1059.001)](https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FDetektrBox%2Fdetection-engineering-portfolio%2Fmain%2Fmitre%2F0xchrisb-detection-coverage-v18.json&tabs=false&selecting_technique=T1059.001)
-
----
-
-### Real-World Incident Response in Action
-**Diagnosed & escalated a global LimaCharlie EDR sensor outage in under 2 hours**
-
-While building this portfolio, LimaCharlie’s entire public download CDN served the wrong binaries across all OSes for ~12 hours. Instead of waiting, I:
-
-- Proved it was vendor-side in <90 min (DNS, firewall, adapters all green)  
-- Wrote the ticket that got engineering to roll back the bad release  
-- Pivoted instantly to Sysmon + Atomic Red Team + Sigma  
-- Still shipped 15+ validated detections the same day — zero sprint delay
-
-[![Case Study](https://img.shields.io/badge/Case%20Study-LC%20Sensor%20Incident-blue?style=for-the-badge)](https://github.com/DetektrBox/detection-engineering-portfolio/blob/main/lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
-
+[![MITRE Coverage](https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FDetektrBox%2Fdetection-engineering-portfolio%2Fmain%2Fmitre%2F0xchrisb-detection-coverage-v18.json&tabs=false&selecting_technique=T1059.001&showSubtechniques=true)](https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FDetektrBox%2Fdetection-engineering-portfolio%2Fmain%2Fmitre%2F0xchrisb-detection-coverage-v18.json&tabs=false&selecting_technique=T1059.001&showSubtechniques=true)
 
 ---
 ⭐ **Star this repo** if you find the content useful  
