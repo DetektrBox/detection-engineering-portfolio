@@ -39,14 +39,16 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 **Last updated**: November 2025 — updated daily until I land the role
 
 ---
+
+### Newest Updated Example: 
+
 ### MITRE ATT&CK Coverage (T1059.001 already green)
 
 ![T1059.001 – PowerShell EncodedCommand caught live](https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/t1059.001-green-screenshot.png)
 
-**Caught live 2025-11-28** – Sysmon Event 4688 + custom Sigma rule  
-Full layer JSON in repo: [`mitre/0xchrisb-detection-coverage-v18.json`](mitre/0xchrisb-detection-coverage-v18.json)
+**Caught live 2025-11-28** – Sysmon Event 4688 + custom Sigma rule  ['sigma/windows/powershell/powershell_encoded_command.yml'](sigma/windows/powershell/powershell_encoded_command.yml)
+**Full layer JSON in repo:** — [`mitre/0xchrisb-detection-coverage-v18.json`](mitre/0xchrisb-detection-coverage-v18.json)
 
-Updated daily until I land the role.
 ---
 
 ⭐ **Star this repo** if you find the content useful  
