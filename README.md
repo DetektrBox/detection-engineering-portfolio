@@ -50,7 +50,7 @@ While building this portfolio, LimaCharlie’s entire public download CDN served
 - Pivoted instantly to Sysmon + Atomic Red Team + Sigma  
 - Still shipped 15+ validated detections the same day — zero sprint delay
 
-[![Diagnosed global LimaCharlie outage <2h](https://img.shields.io/badge/Incident-Global%20Outage%20Diagnosed%20%3C2h-critical-red?style=for-the-badge)](lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
+[![Diagnosed global LimaCharlie outage <2h](https://img.shields.io/badge/Incident-Global_Outage_Diagnosed_<2h-critical-red?style=for-the-badge)](lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
 
 ---
 ⭐ **Star this repo** if you find the content useful  
