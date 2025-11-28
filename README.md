@@ -41,7 +41,7 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 ### Live MITRE ATT&CK Coverage (T1059.001 already green)
 
-[![MITRE Coverage](https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FDetektrBox%2Fdetection-engineering-portfolio%2Fmain%2Fmitre%2F0xchrisb-detection-coverage-v18.json&tabs=false&selecting_technique=T1059.001&showSubtechniques=true)](https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FDetektrBox%2Fdetection-engineering-portfolio%2Fmain%2Fmitre%2F0xchrisb-detection-coverage-v18.json&tabs=false&selecting_technique=T1059.001&showSubtechniques=true)
+<iframe src="https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FDetektrBox%2Fdetection-engineering-portfolio%2Fmain%2Fmitre%2F0xchrisb-detection-coverage-v18.json&tabs=false&selecting_technique=T1059.001&showSubtechniques=true" width="1000" height="600" frameborder="0"></iframe>
 
 ---
 ⭐ **Star this repo** if you find the content useful  
