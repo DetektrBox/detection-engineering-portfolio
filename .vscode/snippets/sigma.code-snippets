@@ -1,0 +1,30 @@
+{
+    "Sigma Rule Template": {
+        "prefix": "sigma-rule",
+        "body": [
+            "title: ${1:Detection Rule Title}",
+            "id: ${2:$(uuid)}",
+            "status: stable",
+            "description: ${3:Brief description}",
+            "author: Chris Bradford",
+            "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+            "references: []",
+            "tags:",
+            "  - attack.${4:tXXXX}",
+            "",
+            "logsource:",
+            "  product: ${5:windows}",
+            "  category: ${6:process_creation}",
+            "",
+            "detection:",
+            "  selection:",
+            "    ${7:FieldName}: ${8:value}",
+            "  condition: selection",
+            "",
+            "falsepositives:",
+            "  - Unknown",
+            "",
+            "level: high"
+        ]
+    }
+}

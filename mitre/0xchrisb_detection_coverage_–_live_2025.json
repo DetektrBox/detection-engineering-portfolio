@@ -1,0 +1,50 @@
+{
+  "name": "0xChrisB Detection Coverage – Live 2025",
+  "versions": {
+    "attack": "18",
+    "navigator": "5.2.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Real detections I personally wrote, tested with Atomic Red Team, and validated in LimaCharlie. No slides. No theory. Just alerts that fired. Updated live from GitHub Actions.",
+  "filters": {
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Network Devices",
+      "ESXi",
+      "PRE",
+      "Containers",
+      "IaaS",
+      "Office Suite",
+      "SaaS",
+      "Identity Provider"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "average",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": false,
+    "countUnscored": false,
+    "expandedSubtechniques": "none"
+  },
+  "hideDisabled": false,
+  "techniques": [],
+  "gradient": {
+    "colors": ["#0d1117ff", "#00ff00ff"],
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "legendItems": [],
+  "metadata": [],
+  "links": [],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "selectVisibleTechniques": false
+}

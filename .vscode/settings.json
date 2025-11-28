@@ -1,0 +1,22 @@
+{
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/SigmaHQ/sigma-specification/main/json-schema/sigma-detection-rule-schema.json": [
+      "sigma/**/*.yml",
+      "sigma/**/*.yaml"
+    ]
+  },
+
+  "files.associations": {
+    "*.yml": "yaml",
+    "*.yaml": "yaml"
+  },
+
+  "material-icon-theme.files.associations": {
+    "*.yml": "yaml",
+    "*.yaml": "yaml"
+  },
+
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "material-icon-theme"
+}

@@ -14,12 +14,12 @@ logsource:
 detection:
   selection1:
     Image|endswith: '\mshta.exe'
-    CommandLine|contains: 'data:text/html;base64,'
+    CommandLine|contains: "data:text/html;base64,"
   selection2:
     Image|endswith: '\rundll32.exe'
     CommandLine|contains:
-      - 'javascript:'
-      - 'eval('
+      - "javascript:"
+      - "eval("
   condition: selection1 or selection2
 falsepositives:
   - Rare legitimate usage of mshta with base64 payloads
