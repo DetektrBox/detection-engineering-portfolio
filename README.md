@@ -39,6 +39,16 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 **Last updated**: November 2025 — updated daily until I land the role
 
 ---
+### MITRE ATT&CK Coverage (T1059.001 already green)
+
+![T1059.001 – PowerShell EncodedCommand caught live](https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/t1059.001-green-screenshot.png)
+
+**Caught live 2025-11-28** – Sysmon Event 4688 + custom Sigma rule  
+Full layer JSON in repo: [`mitre/0xchrisb-detection-coverage-v18.json`](mitre/0xchrisb-detection-coverage-v18.json)
+
+Updated daily until I land the role.
+---
+
 ⭐ **Star this repo** if you find the content useful  
 💬 Feedback, rule requests, or job leads — always welcome!
 
