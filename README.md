@@ -40,7 +40,10 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 ---
 ### Live MITRE ATT&CK Coverage (T1059.001 already green)
 
-[![MITRE Coverage](https://mitre-attack.github.io/attack-navigator/?layerURL=https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/0xchrisb-detection-coverage-v18.json&showSubtechniques=true&selecting_technique=T1059.001)](https://mitre-attack.github.io/attack-navigator/?layerURL=https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/0xchrisb-detection-coverage-v18.json&showSubtechniques=true&selecting_technique=T1059.001)
+![MITRE Coverage Heatmap](https://github.com/DetektrBox/detection-engineering-portfolio/blob/main/mitre/t1059.001-green-screenshot.png?raw=true)
+
+**T1059.001 (PowerShell EncodedCommand) – Caught live with Sysmon + Sigma.**  
+Full interactive layer: [View in MITRE Navigator](https://mitre-attack.github.io/attack-navigator/?layerURL=https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/0xchrisb-detection-coverage-v18.json)
 ---
 ⭐ **Star this repo** if you find the content useful  
 💬 Feedback, rule requests, or job leads — always welcome!
