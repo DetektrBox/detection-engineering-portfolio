@@ -46,7 +46,7 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 ![T1059.001 – PowerShell EncodedCommand caught live](https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/t1059.001-green-screenshot.png)
 
-**Caught live 2025-11-28** – Sysmon Event 4688 + custom Sigma rule  ['sigma/windows/powershell/powershell_encoded_command.yml'](sigma/windows/powershell/powershell_encoded_command.yml)
+**Caught live** – Sysmon Event 4688 + custom Sigma rule  [`sigma/windows/powershell/powershell_encoded_command.yml`](sigma/windows/powershell/powershell_encoded_command.yml)
 
 
 **Full layer JSON in repo:** — [`mitre/0xchrisb-detection-coverage-v18.json`](mitre/0xchrisb-detection-coverage-v18.json)
