@@ -47,5 +47,3 @@ Related Artifacts in this Repo
 → /sigma/ – 15+ Sigma rules written same day
 → /mitre/0xChrisB-coverage-v18.json – 15 techniques painted green despite the outage
 → /SNAPSHOTS/ – Sysmon event screenshots used for rule creation
-
-[![Case Study](https://img.shields.io/badge/Case%20Study-LC%20Sensor%20Incident-blue?style=for-the-badge)](https://github.com/DetektrBox/detection-engineering-portfolio/blob/main/lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)

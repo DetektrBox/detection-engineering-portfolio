@@ -1,12 +1,12 @@
 {
-  "name": "0xChrisB Detection Coverage – Live 2025",
+  "name": "layer",
   "versions": {
     "attack": "18",
     "navigator": "5.2.0",
     "layer": "4.5"
   },
   "domain": "enterprise-attack",
-  "description": "Real detections I personally wrote, tested with Atomic Red Team, and validated in LimaCharlie. No slides. No theory. Just alerts that fired. Updated live from GitHub Actions.",
+  "description": "",
   "filters": {
     "platforms": [
       "Windows",
@@ -26,16 +26,28 @@
   "layout": {
     "layout": "side",
     "aggregateFunction": "average",
-    "showID": true,
+    "showID": false,
     "showName": true,
     "showAggregateScores": false,
     "countUnscored": false,
     "expandedSubtechniques": "none"
   },
   "hideDisabled": false,
-  "techniques": [],
+  "techniques": [
+    {
+      "techniqueID": "T1059.001",
+      "tactic": "execution",
+      "score": 100,
+      "color": "#00ff00",
+      "comment": "Caught live 2025-11-28 – Sysmon Event 4688 + custom Sigma rule (sigma/windows/powershell/powershell_encoded_command.yml)",
+      "enabled": true,
+      "metadata": [],
+      "links": [],
+      "showSubtechniques": false
+    }
+  ],
   "gradient": {
-    "colors": ["#0d1117ff", "#00ff00ff"],
+    "colors": ["#ff6666ff", "#ffe766ff", "#8ec843ff"],
     "minValue": 0,
     "maxValue": 100
   },

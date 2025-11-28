@@ -1,0 +1,25 @@
+title: PowerShell Encoded Command Execution
+id: 4e6f5c81-1c85-4e3b-9c0d-7e7d5b6b0b5c
+status: experimental
+description: Detects PowerShell executing an encoded command (-EncodedCommand / -enc)
+author: Chris Bradford (@0xChrisB)
+date: 2025-11-28
+references:
+    - https://attack.mitre.org/techniques/T1059/001/
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection:
+        Image|endswith: '\powershell.exe'
+        CommandLine|contains:
+            - '-EncodedCommand'
+            - '-enc'
+            - '-ec'
+    condition: selection
+falsepositives:
+    - Legitimate administrative scripting (rare with -WindowStyle Hidden)
+level: high
+tags:
+    - attack.execution
+    - attack.t1059.001
