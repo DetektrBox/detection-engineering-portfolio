@@ -38,8 +38,18 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 **Last updated**: November 2025 — updated daily until I land the role
 
-**LimaCharlie Global Sensor Outage – Diagnosed & Escalated in <2h**  
-[![Diagnosed & escalated global LimaCharlie sensor outage](https://img.shields.io/badge/Incident-Diagnosed%20Global%20Outage%20%3C2h-critical-red?style=flat-square&logo=limacharlie&logoColor=white)](lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
+---
+
+### Real-World Incident Response in Action
+**Diagnosed & escalated a global LimaCharlie EDR sensor outage in under 2 hours**  
+While building this portfolio, LimaCharlie’s entire public download CDN served the wrong binaries across all OSes for ~12 hours. Instead of waiting, I:
+
+- Proved it was vendor-side in <90 min (DNS, firewall, adapters all green)  
+- Wrote the ticket that got engineering to roll back the bad release  
+- Pivoted instantly to Sysmon + Atomic Red Team + Sigma  
+- Still shipped 15+ validated detections the same day — zero sprint delay
+
+[![Diagnosed & escalated global LimaCharlie sensor outage](https://img.shields.io/badge/Incident-Diagnosed%20Global%20Outage%20%3C2h-critical-red?style=for-the-badge&logo=limacharlie&logoColor=white)](lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
 
 ---
 ⭐ **Star this repo** if you find the content useful  
