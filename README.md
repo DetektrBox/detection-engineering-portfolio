@@ -38,6 +38,9 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 
 **Last updated**: November 2025 — updated daily until I land the role
 
+**LimaCharlie Global Sensor Outage – Diagnosed & Escalated in <2h**  
+[![Diagnosed & escalated global LimaCharlie sensor outage](https://img.shields.io/badge/Incident-Diagnosed%20Global%20Outage%20%3C2h-critical-red?style=flat-square&logo=limacharlie&logoColor=white)](lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
+
 ---
 ⭐ **Star this repo** if you find the content useful  
 💬 Feedback, rule requests, or job leads — always welcome!
