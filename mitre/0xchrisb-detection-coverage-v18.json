@@ -1,12 +1,12 @@
 {
-  "name": "layer",
+  "name": "DetektrBox Detection Coverage – Live 2025",
   "versions": {
     "attack": "18",
     "navigator": "5.2.0",
     "layer": "4.5"
   },
   "domain": "enterprise-attack",
-  "description": "",
+  "description": "Real detections built with Sysmon + Sigma. T1059.001 (PowerShell EncodedCommand) already green. More coming daily.",
   "filters": {
     "platforms": [
       "Windows",
