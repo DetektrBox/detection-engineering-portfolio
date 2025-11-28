@@ -37,10 +37,7 @@ Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validat
 **Email**: Chris.H.Bradford@proton.me
 
 **Last updated**: November 2025 — updated daily until I land the role
----
-### Live MITRE ATT&CK Coverage (T1059.001 already green)
 
-[![MITRE Coverage](https://mitre-attack.github.io/attack-navigator/?layerURL=https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/0xchrisb-detection-coverage-v18.json&showSubtechniques=true&selecting_technique=T1059.001)](https://mitre-attack.github.io/attack-navigator/?layerURL=https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/0xchrisb-detection-coverage-v18.json&showSubtechniques=true&selecting_technique=T1059.001)
 ---
 ⭐ **Star this repo** if you find the content useful  
 💬 Feedback, rule requests, or job leads — always welcome!
