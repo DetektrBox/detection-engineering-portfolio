@@ -18,11 +18,12 @@ Resolve-DnsName downloads.limacharlie.io                # Success
 Test-NetConnection sensor.limacharlie.io -Port 443      # TcpTestSucceeded: True
 New-NetFirewallRule -DisplayName "LimaCharlie" -Direction Outbound -Protocol TCP -RemotePort 443 -Action Allow
 
-| Platform       | Expected File      Actual File Served                     Result |
-|----------------|---------------------|----------------------------------------|--------|
-| Windows 64-bit | lc_sensor.exe       hcp_win_x64_release_4.33.20.exe        Wrong  |
-| macOS          | limacharlie.pkg     hcp_macos_release_...                  Wrong  |
-| Linux 64-bit   | limacharlie.deb     hcp_linux_x86_64_release_...           Wrong  |
+| Platform       | Expected File       | Actual File Served                    | Result |
+|----------------|---------------------|---------------------------------------|--------|
+| Windows 64-bit | lc_sensor.exe       | hcp_win_x64_release_4.33.20.exe       | Wrong  |
+| macOS          | limacharlie.pkg     | hcp_macos_release_...                 | Wrong  |
+| Linux 64-bit   | limacharlie.deb     | hcp_linux_x86_64_release_...          | Wrong  |
+
 Impact & Immediate Mitigation
 
 Blocked new sensor enrollment for the entire LimaCharlie user base during the window.
@@ -47,5 +48,4 @@ Related Artifacts in this Repo
 → /mitre/0xChrisB-coverage-v18.json – 15 techniques painted green despite the outage
 → /SNAPSHOTS/ – Sysmon event screenshots used for rule creation
 
-[![Diagnosed & escalated global LimaCharlie sensor outage](https://img.shields.io/badge/Incident-Diagnosed%20Global%20Vendor%20Outage%20%3C2h-red)](lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
-
+[![Case Study](https://img.shields.io/badge/Case%20Study-LC%20Sensor%20Incident-blue?style=for-the-badge)](https://github.com/DetektrBox/detection-engineering-portfolio/blob/main/lc-edr-troubleshooting-case-study/LC-Sensor-Deployment-Failure.md)
