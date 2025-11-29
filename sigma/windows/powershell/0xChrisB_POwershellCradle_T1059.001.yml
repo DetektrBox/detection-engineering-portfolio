@@ -1,0 +1,27 @@
+title: 0xChrisB - PowerShell Download Cradle via WebClient (T1059.001)
+id: 8c6fe8e3-3f87-4e2f-8e2b-9f3e8d4d5f6a
+status: experimental
+description: Detects classic IEX (New-Object Net.WebClient).DownloadString cradle used in 99% of initial access payloads
+author: 0xChrisB (DetektrBox Lab)
+date: 2025-11-28
+tags:
+    - attack.execution
+    - attack.t1059.001
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    selection_image:
+        - Image|endswith: '\powershell.exe'
+        - Image|endswith: '\pwsh.exe'
+    selection_flags:
+        CommandLine|contains|all:
+            - '-nop'
+            - '-w hidden'
+            - '-c'
+    selection_cradle:
+        CommandLine|re: '(?i)New-Object.*Net\.WebClient.*DownloadString'
+    condition: selection_image and (selection_flags or selection_cradle)
+falsepositives:
+    - Rare legitimate scripting (will tune this later)
+level: high
