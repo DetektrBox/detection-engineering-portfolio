@@ -43,3 +43,12 @@ Next: Day 3 – Detection-as-Code (first live Sigma rule)
 - This is what real detection engineering looks like on Day 3
 
 Next: Day 4 – Atomic Red Team + signed binary abuse that flies under AV
+
+# Day 4 – From Red to Blue: Atomic Red Team → Custom Sigma
+
+1. Executed real 2025 TTP (T1218.011 – signed-binary proxy via rundll32 url.dll)
+2. Community Sigma rule fired (good)
+3. Authored tighter, branded rule that reduces noise
+4. Result: My rule fires faster, clearer, and with my name on it
+
+This is detection engineering: understand the attack → improve the detection → own the outcome.
