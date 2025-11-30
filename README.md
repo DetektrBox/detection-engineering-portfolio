@@ -1,59 +1,81 @@
-# Detection Engineering Portfolio -- Chris Bradford
+# Detection Engineering Portfolio – Chris Bradford
 
-![Detection Engineering Banner](https://media.licdn.com/dms/image/v2/D4E16AQEwvcSys-1BHw/profile-displaybackgroundimage-shrink_350_1400/B4EZf8ubK1HwAY-/0/1752291718131?e=1765411200&v=beta&t=kMZQivAtkJkCOxwi380tsy5PHjSM04YKKvJQoLMb5Ic)  
+![Detection Engineering Banner](https://media.licdn.com/dms/image/v2/D4E16AQEwvcSys-1BHw/profile-displaybackgroundimage-shrink_350_1400/B4EZf8ubK1HwAY-/0/1752291718131?e=1765411200&v=beta&t=kMZQivAtkJkCOxwi380tsy5PHjSM04YKKvJQoLMb5Ic)
 
+**USAF Veteran** • **Clearance-Eligible** • **SC-200 + CJDE → Dec 2025**  
+Former SOC Analyst (DefendEdge) → now executing a focused Detection Engineering sprint that turns raw telemetry into production-grade content.
 
-**USAF Veteran** • **Active Clearance-Eligible** • **SC-200 + CJDE Dec 2025**  
-Former SOC Analyst (DefendEdge) → now shipping **production-ready, lab-validated detection content daily**
+**This is not a notes repo.**  
+Everything here follows the same cycle I will use on your team:
 
-**Every single rule in this repo fires real alerts in my lab** (Splunk | Elastic | Microsoft Sentinel | Atomic Red Team). No theory, only content that works.
+> **Telemetry → Detection → Validation → Tuning → Automation → Documentation**
 
-## What’s Inside (Live & Growing)
+No copy-paste Sigma. No theory. Only content that has **fired real alerts in my lab**.
 
-| Category                       | Count | Details                                                                                   | Folder Link                                 |
-|--------------------------------|-------|-------------------------------------------------------------------------------------------|---------------------------------------------|
-| **Sigma Rules**                | 30+   | Windows • Linux • macOS • Cloud • Identity • Fully MITRE-mapped & tuned                   | [`/sigma`](sigma)                           |
-| **YARA Rules**                 | 12+   | 2024–2025 families (LummaC2, AsyncRAT, Pikabot, Latentit, etc.)                           | [`/yara`](yara)                             |
-| **Detection Stories**          | 10    | Red Canary/CrowdStrike-style narratives: TTP → Detection → Alert screenshots              | [`/detection-stories`](detection-stories)   |
-| **Threat Campaign Write-up**   | 1     | Full 2025 campaign deep-dive with timeline, TTPs, custom rules, and hunting queries       | [`/threat-campaigns`](threat-campaigns)     |
-| **Detection-as-Code Pipeline** | 3     | GitHub Actions: Sigma lint • YARA compile • rule validation on every push                 | [`.github/workflows`](.github/workflows)    |
-| **Automation Scripts**         | 3+    | Sigma → Splunk/Elastic converters • bulk YARA tester • MITRE enrichment script            | [`/automation`](automation)                 |
-| **Assets**                     | –     | Screenshots of alerts firing in my lab • banners • rule validation evidence • Atomic Red Team results | [`/assets`](assets)             |
+---
 
+## What Is Inside Right Now
 
-## Why Hire Me as Your Next Detection Engineer?
+| Category                  | What It Proves                                                                                               | Folder |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------|--------|
+| **Telemetry Foundation**  | Sysmon • LimaCharlie • OSQuery • Windows Event Logs – cross-mapped field-by-field from the same TTPs                 | [`telemetry`](telemetry) |
+| **Sigma Rules**           | Custom rules authored from my own telemetry – high-fidelity + noisy baselines + explicit tuning notes               | [`detections/sigma`](detections/sigma) |
+| **Elastic / KQL / EQL**   | Sigma → Kibana translation with live screenshots of hits                                                            | [`detections/elastic`](detections/elastic) |
+| **YARA Rules**            | Pattern-based detections for 2024–2025 families (LummaC2, AsyncRAT, Pikabot, Latentit, etc.)                        | [`yara`](yara) |
+| **Adversary Simulation**  | Atomic Red Team • MITRE Caldera • Sliver C2 – full execution chains + telemetry exports                             | [`adversary-simulation`](adversary-simulation) |
+| **Detection Stories**     | Red Canary-style narratives: TTP → raw telemetry → custom rule → alert → tuning → final version                     | [`detection-stories`](detection-stories) |
+| **Detection-as-Code**     | GitHub Actions that **fail the build** on broken Sigma and auto-convert to Elastic on merge                          | [`.github/workflows`](.github/workflows) |
+| **Malware Analysis**      | CAPA + HybridAnalysis on real samples → direct mapping to new detections                                            | [`malware`](malware) |
+| **Flagship Case Study**   | End-to-end 2025 attack chain with multi-sensor telemetry, Sigma + Elastic, FP/FN analysis, SOC playbook, and diagram | [`case_studies/flagship`](case_studies/flagship) |
 
-- 11 years of mission-critical discipline (USAF) + real SOC triage (800+ incidents)
-- Proven ability to author, tune, validate, and automate high-fidelity detections
-- Clearance-eligible today: ready for DoD/contractor roles
-- Actively pursuing **Microsoft SC-200** and **CJDE** (target completion Dec 2025)
-- 100% public, production-grade portfolio — recruiters can see the quality instantly
+---
 
-**Open to**: Detection Engineer • Threat Detection Engineer • Security Content Developer • SOC Content Engineer  
-(Remote or Cleared –- CONUS)
+## 9-Day Detection Engineering Sprint (v2) – Live Right Now
 
-## Let’s Connect
+I am **currently executing** this exact sprint. Watch the folders update daily.
+
+| Day | Theme                                      | Core Deliverable |
+|-----|--------------------------------------------|------------------|
+| 1   | Telemetry Foundation                       | `telemetry/day1/` + field_mapping.md |
+| 2   | Sigma From Scratch                         | 4 custom rules in `detections/sigma/day2/` |
+| 3   | Atomic Red Team + Correlation              | `detection-stories/day3/` + multi-event chain |
+| 4   | Elastic Stack                              | `detections/elastic/day4/` + live Kibana queries |
+| 5   | Detection-as-Code Pipeline                 | CI that blocks broken rules |
+| 6   | Caldera Emulation                          | Full ATT&CK chain + detection story |
+| 7   | Sliver C2                                  | Beacon → injection → lateral + Sliver-specific Sigma |
+| 8   | Malware & Static Analysis                  | CAPA + HybridAnalysis → new detections |
+| 9   | Flagship Case Study                        | The portfolio centerpiece |
+
+Progress is public – just watch the repo.
+
+---
+
+## Why You Should Hire Me as Your Next Detection Engineer
+
+- 11 years of mission-driven discipline (USAF) + real SOC triage experience
+- I **author** detections from raw telemetry instead of consuming community content
+- I **validate** every rule in CI so nothing broken ever ships
+- I **tune** based on lived alert-fatigue reality
+- I **document** for 02:00 handoffs, not slide decks
+- Clearance-eligible today • Targeting **SC-200** + **CJDE** by Dec 2025
+
+**Open to:** Detection Engineer • Threat Detection Engineer • Security Content Engineer • MDR Engineer  
+(Remote preferred • Cleared roles & CONUS welcome)
+
+---
+
+## Contact
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Christopher_Bradford-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chrisbradford-/)  
-**Email**: Chris.H.Bradford@proton.me
+**Email:** Chris.H.Bradford@proton.me
 
-**Last updated**: November 2025 — updated daily until I land the role
-
----
-
-### Newest Updated Example: 
-
-### MITRE ATT&CK Coverage (T1059.001 already green)
-
-![T1059.001 – PowerShell EncodedCommand caught live](https://raw.githubusercontent.com/DetektrBox/detection-engineering-portfolio/main/mitre/t1059.001-green-screenshot.png)
-
-**Caught live** – Sysmon Event 4688 + custom Sigma rule  [`sigma/windows/powershell/powershell_encoded_command.yml`](sigma/windows/powershell/powershell_encoded_command.yml)
-
-
-**Full layer JSON in repo:** — [`mitre/0xchrisb-detection-coverage-v18.json`](mitre/0xchrisb-detection-coverage-v18.json)
+**Last updated:** November 2025 – updated daily until hired
 
 ---
 
-⭐ **Star this repo** if you find the content useful  
-💬 Feedback, rule requests, or job leads — always welcome!
+⭐ Star this repo if you’ve ever had to explain why a rule fires 400 times a day  
+💬 Rule requests, feedback, job leads — always welcome
 
-*“The best detection engineers don’t just read Sigma rules — they write the ones everyone else uses.”* – Me, right now.
+> **The best detection engineers don’t just read Sigma rules. They ship the ones everyone else ends up copying.**
+
+— Chris Bradford, right now.
