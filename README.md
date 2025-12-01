@@ -6,7 +6,7 @@
 Former SOC Analyst (DefendEdge) → now executing a focused Detection Engineering sprint that turns raw telemetry into production-grade content.
 
 **This is not a notes repo.**  
-Everything here follows the same cycle I will use on your team:
+Everything here follows the same cycle I will use on a team:
 
 > **Telemetry → Detection → Validation → Tuning → Automation → Documentation**
 
@@ -52,21 +52,22 @@ Progress is public – just watch the repo.
 
 ## Why You Should Hire Me as Your Next Detection Engineer
 
-- 11 years of mission-driven discipline (USAF) + real SOC triage experience
-- I **author** detections from raw telemetry instead of consuming community content
-- I **validate** every rule in CI so nothing broken ever ships
-- I **tune** based on lived alert-fatigue reality
-- I **document** for 02:00 handoffs, not slide decks
-- Clearance-eligible today • Targeting **SC-200** + **CJDE** by Dec 2025
+* **Engineering Mindset:** I **author** detections from raw telemetry instead of just consuming community feeds.
+* **Quality Assurance:** I **validate** every rule in CI/CD so nothing broken ever hits production.
+* **Analyst Empathy:** I **tune** logic based on lived SOC alert-fatigue—if it's noisy, I fix it.
+* **Operational Readiness:** I **document** for 2 AM incident response, not for slide decks.
+* **Mission-Driven:** 11 years of USAF discipline + real-world SOC triage experience.
 
-**Open to:** Detection Engineer • Threat Detection Engineer • Security Content Engineer • MDR Engineer  
-(Remote preferred • Cleared roles & CONUS welcome)
+**Status:** Active Secret Clearance • Targeting **SC-200** + **CJDE** (Dec 2025)
 
+**Open to:** Detection Engineer • Threat Detection Engineer • Security Content Developer • MDR Analyst  • SOC Analyst
+*(Remote preferred • Cleared roles & CONUS welcome)*
 ---
 
 ## Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Christopher_Bradford-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chrisbradford-/)  
+
 **Email:** Chris.H.Bradford@proton.me
 
 **Last updated:** November 2025 – updated daily until hired
