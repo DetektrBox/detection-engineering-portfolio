@@ -2,7 +2,7 @@
 
 ![Detection Engineering Banner](https://media.licdn.com/dms/image/v2/D4E16AQEwvcSys-1BHw/profile-displaybackgroundimage-shrink_350_1400/B4EZf8ubK1HwAY-/0/1752291718131?e=1765411200&v=beta&t=kMZQivAtkJkCOxwi380tsy5PHjSM04YKKvJQoLMb5Ic)
 
-**USAF Veteran** • **Clearance-Eligible** • **SC-200 + CJDE → Dec 2025**  
+**USAF Veteran** • **Clearance-Eligible** 
 Former SOC Analyst (DefendEdge) → now executing a focused Detection Engineering sprint that turns raw telemetry into production-grade content.
 
 **This is not a notes repo.**  
@@ -30,11 +30,11 @@ No copy-paste Sigma. No theory. Only content that has **fired real alerts in my 
 
 ---
 
-## 9-Day Detection Engineering Sprint (v2) – Live Right Now
+## Detection Engineering Sprint (v2) – Live Right Now
 
 I am **currently executing** this exact sprint. Watch the folders update daily.
 
-| Day | Theme                                      | Core Deliverable |
+|Tasks| Theme                                      | Core Deliverable |
 |-----|--------------------------------------------|------------------|
 | 1   | Telemetry Foundation                       | `telemetry/day1/` + field_mapping.md |
 | 2   | Sigma From Scratch                         | 4 custom rules in `detections/sigma/day2/` |
@@ -70,7 +70,7 @@ Progress is public – just watch the repo.
 
 **Email:** Chris.H.Bradford@proton.me
 
-**Last updated:** November 2025 – updated daily until hired
+**Last updated:** November 2025 – 
 
 ---
 
