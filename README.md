@@ -6,7 +6,7 @@
 Former SOC Analyst (DefendEdge) → now executing a focused Detection Engineering sprint that turns raw telemetry into production-grade content.
 
 **This is not a notes repo.**  
-Everything here follows the same cycle I will use on a team:
+Everything here follows the same cycle:
 
 > **Telemetry → Detection → Validation → Tuning → Automation → Documentation**
 
@@ -50,15 +50,13 @@ Progress is public – just watch the repo.
 
 ---
 
-## Why You Should Hire Me as Your Next Detection Engineer
+## Operational Philosophy & Engineering Mindset
 
 * **Engineering Mindset:** I **author** detections from raw telemetry instead of just consuming community feeds.
 * **Quality Assurance:** I **validate** every rule in CI/CD so nothing broken ever hits production.
 * **Analyst Empathy:** I **tune** logic based on lived SOC alert-fatigue—if it's noisy, I fix it.
 * **Operational Readiness:** I **document** for 2 AM incident response, not for slide decks.
 * **Mission-Driven:** 11 years of USAF discipline + real-world SOC triage experience.
-
-**Status:** Active Secret Clearance • Targeting **SC-200** + **CJDE** (Dec 2025)
 
 **Open to:** Detection Engineer • Threat Detection Engineer • Security Content Developer • MDR Analyst  • SOC Analyst
 *(Remote preferred • Cleared roles & CONUS welcome)*
@@ -70,7 +68,7 @@ Progress is public – just watch the repo.
 
 **Email:** Chris.H.Bradford@proton.me
 
-**Last updated:** November 2025 – 
+**Last updated:** November 2025  
 
 ---
 
